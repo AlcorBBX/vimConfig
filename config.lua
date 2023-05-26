@@ -116,7 +116,7 @@ local code_actions = require("lvim.lsp.null-ls.code_actions")
 code_actions.setup({
 	{
 		exe = "eslint",
-		filetypes = { "typescript", "typescriptreact" },
+		filetypes = { "typescript", "javascript", "typescriptreact", "javascriptreact" },
 	},
 })
 
@@ -185,6 +185,19 @@ lvim.plugins = {
 --   end,
 -- })
 -- lsp installer
+
+-- table.insert(lvim.plugins, {
+--   "zbirenbaum/copilot-cmp",
+--   event = "InsertEnter",
+--   dependencies = { "zbirenbaum/copilot.lua" },
+--   config = function()
+--     vim.defer_fn(function()
+--       require("copilot").setup() -- https://github.com/zbirenbaum/copilot.lua/blob/master/README.md#setup-and-configuration
+--       require("copilot_cmp").setup() -- https://github.com/zbirenbaum/copilot-cmp/blob/master/README.md#configuration
+--     end, 100)
+--   end,
+-- })
+
 lvim.lsp.installer.setup.ensure_installed = {
 	-- "sumneko_lua",
 	"jsonls",
