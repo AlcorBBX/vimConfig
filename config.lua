@@ -174,6 +174,7 @@ lvim.plugins = {
 	-- themes
 	{ "Mofiqul/dracula.nvim" },
 	{ "rebelot/kanagawa.nvim" },
+	{ "projekt0n/github-nvim-theme" },
 	-- themes
 }
 -- -- Autocommands (`:help autocmd`) <https://neovim.io/doc/user/autocmd.html>
