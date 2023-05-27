@@ -34,6 +34,7 @@ lvim.leader = "space"
 -- lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
 
 -- -- Change theme settings
+-- lvim.builtin.theme.
 lvim.colorscheme = "dracula"
 
 lvim.builtin.alpha.active = true
@@ -45,12 +46,11 @@ lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
 -- Automatically install missing parsers when entering buffer
 lvim.builtin.treesitter.auto_install = true
 
--- lvim.builtin.treesitter.ignore_install = { "haskell" }
+lvim.builtin.treesitter.ignore_install = { "html", "yaml", "bash" }
 
 -- -- always installed on startup, useful for parsers without a strict filetype
 -- lvim.builtin.treesitter.ensure_installed = { "comment", "markdown_inline", "regex" }
 lvim.builtin.treesitter.ensure_installed = {
-	-- "bash",
 	-- "c",
 	"markdown",
 	"javascript",
@@ -62,7 +62,6 @@ lvim.builtin.treesitter.ensure_installed = {
 	"css",
 	"rust",
 	-- "java",
-	-- "yaml",
 }
 -- -- generic LSP settings <https://www.lunarvim.org/docs/configuration/language-features/language-servers>
 
@@ -134,7 +133,7 @@ lvim.plugins = {
 		-- show colors (color: #ffff)
 		"norcalli/nvim-colorizer.lua",
 		config = function()
-			require("colorizer").setup({ "css", "scss", "html", "javascript" }, {
+			require("colorizer").setup({ "css", "scss", "html", "javascript", "lua" }, {
 				RGB = true, -- #RGB hex codes
 				RRGGBB = true, -- #RRGGBB hex codes
 				RRGGBBAA = true, -- #RRGGBBAA hex codes
