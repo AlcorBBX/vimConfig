@@ -7,7 +7,8 @@ Exit neovim: `Space + q`
 
 Open file tree (nvim-tree): `Space + e`</br>
 Hide/show config files: `H`</br>
-Hide/show node-modules folder: `U`
+Hide/show hidden files: `U`</br>
+Hide/show git ignored files: `I`
 
 ### Comment
 
