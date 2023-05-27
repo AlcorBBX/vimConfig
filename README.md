@@ -10,6 +10,8 @@ Hide/show config files: `H`</br>
 Hide/show hidden files: `U`</br>
 Hide/show git ignored files: `I`
 
+Collapse: `W`</br>
+
 ### Comment
 
 Comment line: `g + c + c` or `Space + /`</br>

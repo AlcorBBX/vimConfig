@@ -34,7 +34,7 @@ lvim.leader = "space"
 -- lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
 
 -- -- Change theme settings
--- lvim.colorscheme = "lunar"
+lvim.colorscheme = "dracula"
 
 lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
@@ -174,6 +174,7 @@ lvim.plugins = {
 
 	-- themes
 	{ "Mofiqul/dracula.nvim" },
+	{ "rebelot/kanagawa.nvim" },
 	-- themes
 }
 -- -- Autocommands (`:help autocmd`) <https://neovim.io/doc/user/autocmd.html>
