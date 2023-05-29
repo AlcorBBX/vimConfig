@@ -1,8 +1,3 @@
---[[
- THESE ARE EXAMPLE CONFIGS FEEL FREE TO CHANGE TO WHATEVER YOU WANT
- `lvim` is the global options object
-]]
--- vim options
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 vim.opt.relativenumber = true
@@ -16,7 +11,7 @@ lvim.format_on_save = {
 	timeout = 1000,
 }
 
-lvim.transparent_window = "true"
+-- lvim.transparent_window = "true"
 
 -- to disable icons and use a minimalist setup, uncomment the following
 -- lvim.use_icons = false
@@ -26,16 +21,16 @@ lvim.leader = "space"
 -- add your own keymapping
 -- lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 
--- lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
--- lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
+lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
+lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
 
 -- -- Use which-key to add extra bindings with the leader-key prefix
 -- lvim.builtin.which_key.mappings["W"] = { "<cmd>noautocmd w<cr>", "Save without formatting" }
 -- lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
 
 -- -- Change theme settings
--- lvim.builtin.theme.
-lvim.colorscheme = "dracula"
+-- lvim.colorscheme = "dracula"
+lvim.colorscheme = "github_dark_high_contrast"
 
 lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
@@ -49,7 +44,7 @@ lvim.builtin.treesitter.auto_install = true
 lvim.builtin.treesitter.ignore_install = { "html", "yaml", "bash" }
 
 -- -- always installed on startup, useful for parsers without a strict filetype
--- lvim.builtin.treesitter.ensure_installed = { "comment", "markdown_inline", "regex" }
+lvim.builtin.treesitter.ensure_installed = { "comment", "markdown_inline", "regex" }
 lvim.builtin.treesitter.ensure_installed = {
 	-- "c",
 	"markdown",
@@ -212,4 +207,4 @@ lvim.lsp.installer.setup.ensure_installed = {
 
 require("lvim.lsp.manager").setup("emmet_ls")
 require("lvim.lsp.manager").setup("tailwindcss")
--- require("lvim.lsp.manager").setup("intelephense")
+require("lvim.lsp.manager").setup("intelephense")
