@@ -29,8 +29,8 @@ Find help: `Space + f + h`
 
 ### Bufferline
 
-Next buffer: `Space + b + n`</br>
-Prev buffer: `Space + b + b`</br>
+Next buffer: `Space + b + n` or `L`</br>
+Prev buffer: `Space + b + b` or `H`</br>
 Close buffer: `Space + c`
 
 ### LSP
