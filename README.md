@@ -21,9 +21,9 @@ Comment block: `g + b + c`
 
 Find file in this directory: `Space + f`</br>
 Find file in this directory: `Space + s + f`</br>
-Find command: `Space + s + C`
-Find keymaps: `Space + s + k`
-Pick colorshceme: `Space + s + c`
+Find command: `Space + s + C`</br>
+Find keymaps: `Space + s + k`</br>
+Pick colorshceme: `Space + s + c`</br>
 Find word in this directory: `Space + f + t`</br>
 Find help: `Space + f + h`
 
