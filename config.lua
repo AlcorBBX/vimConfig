@@ -116,6 +116,17 @@ code_actions.setup({
 
 -- -- Additional Plugins <https://www.lunarvim.org/docs/configuration/plugins/user-plugins>
 lvim.plugins = {
+	-- rust
+	-- { "simrat39/rust-tools.nvim" },
+	-- { "rust-lang/rust.vim" },
+	{
+		"saecki/crates.nvim",
+		config = function()
+			require("crates").setup()
+		end,
+	},
+	-- rust
+
 	{ "windwp/nvim-autopairs" },
 	{
 		"windwp/nvim-ts-autotag",
