@@ -30,7 +30,8 @@ lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
 
 -- -- Change theme settings
 -- lvim.colorscheme = "dracula"
-lvim.colorscheme = "github_dark_high_contrast"
+-- lvim.colorscheme = "github_dark_high_contrast"
+lvim.colorscheme = "catppuccin"
 
 lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
@@ -178,6 +179,50 @@ lvim.plugins = {
 	{ "vim-ctrlspace/vim-ctrlspace" },
 
 	-- themes
+	{
+		"catppuccin/nvim",
+		name = "catppuccin",
+		config = function()
+			require("catppuccin").setup({
+				flavour = "mocha", -- latte, frappe, macchiato, mocha
+				term_colors = true,
+				transparent_background = false,
+				no_italic = false,
+				no_bold = false,
+				styles = {
+					comments = {},
+					conditionals = {},
+					loops = {},
+					functions = {},
+					keywords = {},
+					strings = {},
+					variables = {},
+					numbers = {},
+					booleans = {},
+					properties = {},
+					types = {},
+				},
+				color_overrides = {
+					mocha = {
+						base = "#000000",
+						mantle = "#000000",
+						crust = "#000000",
+					},
+				},
+				highlight_overrides = {
+					mocha = function(C)
+						return {
+							TabLineSel = { bg = C.pink },
+							CmpBorder = { fg = C.surface2 },
+							Pmenu = { bg = C.none },
+							TelescopeBorder = { link = "FloatBorder" },
+						}
+					end,
+				},
+			})
+		end,
+	},
+	{ "morhetz/gruvbox" },
 	{ "Mofiqul/dracula.nvim" },
 	{ "rebelot/kanagawa.nvim" },
 	{ "projekt0n/github-nvim-theme" },
