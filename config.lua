@@ -233,7 +233,12 @@ lvim.plugins = {
 		end,
 	},
 	{ "morhetz/gruvbox" },
+	{ "sainnhe/gruvbox-material" },
+
+	{ "EdenEast/nightfox.nvim" },
 	{ "Mofiqul/dracula.nvim" },
+	{ "navarasu/onedark.nvim" },
+	{ "sainnhe/everforest" },
 	{ "rebelot/kanagawa.nvim" },
 	{ "projekt0n/github-nvim-theme" },
 	-- themes
