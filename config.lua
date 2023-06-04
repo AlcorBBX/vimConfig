@@ -31,7 +31,8 @@ lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
 -- -- Change theme settings
 -- lvim.colorscheme = "dracula"
 -- lvim.colorscheme = "github_dark_high_contrast"
-lvim.colorscheme = "catppuccin"
+-- lvim.colorscheme = "catppuccin"
+lvim.colorscheme = "everforest"
 
 lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
