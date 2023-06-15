@@ -25,14 +25,14 @@ lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
 lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
 
 -- -- Use which-key to add extra bindings with the leader-key prefix
--- lvim.builtin.which_key.mappings["W"] = { "<cmd>noautocmd w<cr>", "Save without formatting" }
--- lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
+lvim.builtin.which_key.mappings["W"] = { "<cmd>noautocmd w<cr>", "Save without formatting" }
+lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
 
 -- -- Change theme settings
 -- lvim.colorscheme = "dracula"
 -- lvim.colorscheme = "github_dark_high_contrast"
 -- lvim.colorscheme = "catppuccin"
-lvim.colorscheme = "everforest"
+lvim.colorscheme = "carbonfox"
 
 lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
@@ -48,17 +48,14 @@ lvim.builtin.treesitter.ignore_install = { "html", "yaml", "bash" }
 -- -- always installed on startup, useful for parsers without a strict filetype
 lvim.builtin.treesitter.ensure_installed = { "comment", "markdown_inline", "regex" }
 lvim.builtin.treesitter.ensure_installed = {
-	-- "c",
 	"markdown",
 	"javascript",
 	"json",
 	"lua",
-	-- "python",
 	"typescript",
 	"tsx",
 	"css",
 	"rust",
-	-- "java",
 }
 -- -- generic LSP settings <https://www.lunarvim.org/docs/configuration/language-features/language-servers>
 
