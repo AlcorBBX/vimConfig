@@ -241,8 +241,14 @@ lvim.plugins = {
 	{ "sainnhe/everforest" },
 	{ "rebelot/kanagawa.nvim" },
 	{ "projekt0n/github-nvim-theme" },
+
+	-- Available values: default, atlantis, andromeda, shusia, maia, espresso
+	{
+		"sainnhe/sonokai",
+	},
 	-- themes
 }
+
 -- -- Autocommands (`:help autocmd`) <https://neovim.io/doc/user/autocmd.html>
 -- vim.api.nvim_create_autocmd("FileType", {
 --   pattern = "zsh",
@@ -270,12 +276,10 @@ lvim.lsp.installer.setup.ensure_installed = {
 	"jsonls",
 	"html",
 	"cssls",
-	"emmet_ls",
 	"tsserver",
-	"intelephense",
+	-- "emmet_ls",
 	"tailwindcss",
 }
 
-require("lvim.lsp.manager").setup("emmet_ls")
+-- require("lvim.lsp.manager").setup("emmet_ls")
 require("lvim.lsp.manager").setup("tailwindcss")
-require("lvim.lsp.manager").setup("intelephense")
