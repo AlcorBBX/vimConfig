@@ -17,6 +17,10 @@ lvim.plugins = {
 	-- 	{ "kndndrj/nvim-dbee" },
 	-- },
 	{
+		-- About enhanced increment/decrement plugin
+		"monaqa/dial.nvim",
+	},
+	{
 		-- Cursor line number mode indicator
 		"mawkler/modicator.nvim",
 	},
