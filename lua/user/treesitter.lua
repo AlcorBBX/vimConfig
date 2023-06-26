@@ -1,3 +1,21 @@
+lvim.builtin.treesitter.rainbow = {
+	enable = true,
+	query = {
+		"rainbow-parens",
+	},
+	strategy = require("ts-rainbow").strategy.global,
+	-- hlgroups = {
+	--   -- "TSRainbowRed",
+	--   "TSRainbowBlue",
+	--   -- "TSRainbowOrange",
+	--   -- "TSRainbowCoral",
+	--   -- "TSRainbowPink",
+	--   "TSRainbowYellow",
+	--   -- "TSRainbowViolet",
+	--   "TSRainbowGreen",
+	-- },
+}
+
 -- Automatically install missing parsers when entering buffer
 lvim.builtin.treesitter.auto_install = true
 

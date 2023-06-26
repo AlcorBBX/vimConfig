@@ -1,6 +1,6 @@
 -- -- Additional Plugins <https://www.lunarvim.org/docs/configuration/plugins/user-plugins>
 lvim.plugins = {
-	-- rust
+	-- NOTE rust
 	-- { "simrat39/rust-tools.nvim" },
 	-- { "rust-lang/rust.vim" },
 	{
@@ -9,26 +9,36 @@ lvim.plugins = {
 			require("crates").setup()
 		end,
 	},
-	-- rust
+	-- NOTE rust
 
-	{ "windwp/nvim-autopairs" },
+	-- NOTE
+	-- {
+	-- 	-- Interactive database client for neovim
+	-- 	{ "kndndrj/nvim-dbee" },
+	-- },
 	{
-		"windwp/nvim-ts-autotag",
-		config = function()
-			require("nvim-ts-autotag").setup()
-		end,
+		-- Cursor line number mode indicator
+		"mawkler/modicator.nvim",
 	},
+	{
+		-- Rainbow delimiters for Neovim through Tree-sitter
+		"HiPhish/nvim-ts-rainbow2",
+	},
+	{
+		-- fidget rewritten soon
+		"j-hui/fidget.nvim",
+	},
+	{
+		-- Neovim plugin to improve the default vim.ui interfaces
+		"stevearc/dressing.nvim",
+	},
+	{ "windwp/nvim-autopairs" },
+	{ "folke/zen-mode.nvim" },
 	{ "mg979/vim-visual-multi" },
 	{
 		-- show colors (color: #fff)
 		"norcalli/nvim-colorizer.lua",
 	},
-	-- {
-	-- 	"tzachar/cmp-tabnine",
-	-- 	build = "./install.sh",
-	-- 	dependencies = "hrsh7th/nvim-cmp",
-	-- 	event = "InsertEnter",
-	-- },
 	{
 		-- warnings, errors in botton showing
 		"folke/trouble.nvim",
@@ -42,18 +52,35 @@ lvim.plugins = {
 		-- metrics, insights, and time tracking automatically generated from your programming activity
 		"wakatime/vim-wakatime",
 	},
-	{ "stephenway/postcss.vim" },
-
 	{ "vim-ctrlspace/vim-ctrlspace" },
+	-- {
+	-- 	"tzachar/cmp-tabnine",
+	-- 	build = "./install.sh",
+	-- 	dependencies = "hrsh7th/nvim-cmp",
+	-- 	event = "InsertEnter",
+	-- },
+	-- NOTE
 
+	-- NOTE Typescript
+	{
+		-- plugin to add vscode-style TailwindCSS completion to nvim-cmp
+		"roobert/tailwindcss-colorizer-cmp.nvim",
+	},
+	{
+		"windwp/nvim-ts-autotag",
+		config = function()
+			require("nvim-ts-autotag").setup()
+		end,
+	},
+	{ "stephenway/postcss.vim" },
 	{
 		"ggandor/lightspeed.nvim",
 		event = "BufRead",
 	},
 	{ "jose-elias-alvarez/typescript.nvim" },
-	{
-		"pmizio/typescript-tools.nvim",
-	},
+	{ "pmizio/typescript-tools.nvim" },
+	-- NOTE Typescript
+
 	-- blazing fast minimap/scrollbar written in Rust
 	-- {
 	-- 	"wfxr/minimap.vim",
@@ -65,7 +92,8 @@ lvim.plugins = {
 	-- 		vim.cmd("let g:minimap_auto_start_win_enter = 1")
 	-- 	end,
 	-- },
-	-- themes
+
+	-- NOTE themes
 	{
 		"catppuccin/nvim",
 		name = "catppuccin",
@@ -171,7 +199,7 @@ lvim.plugins = {
 	},
 	-- Available values: default, atlantis, andromeda, shusia, maia, espresso
 	{ "sainnhe/sonokai" },
-	-- themes
+	-- NOTE themes
 }
 
 -- table.insert(lvim.plugins, {

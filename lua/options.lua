@@ -4,4 +4,8 @@ vim.opt.relativenumber = true
 
 -- add second numbers column
 vim.opt.statuscolumn = "%l %r"
-vim.opt.cursorline = false
+-- vim.opt.cursorline = false
+
+vim.o.termguicolors = true
+vim.o.cursorline = true
+vim.o.number = true
