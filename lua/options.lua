@@ -9,3 +9,5 @@ vim.opt.statuscolumn = "%l %r"
 vim.o.termguicolors = true
 vim.o.cursorline = true
 vim.o.number = true
+
+vim.g.loaded_perl_provider = 0

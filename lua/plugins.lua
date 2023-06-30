@@ -28,10 +28,10 @@ lvim.plugins = {
 		-- Rainbow delimiters for Neovim through Tree-sitter
 		"HiPhish/nvim-ts-rainbow2",
 	},
-	{
-		-- fidget rewritten soon
-		"j-hui/fidget.nvim",
-	},
+	-- {
+	-- 	-- fidget rewritten soon
+	-- 	"j-hui/fidget.nvim",
+	-- },
 	{
 		-- Neovim plugin to improve the default vim.ui interfaces
 		"stevearc/dressing.nvim",
@@ -98,66 +98,66 @@ lvim.plugins = {
 	-- },
 
 	-- NOTE themes
-	{
-		"catppuccin/nvim",
-		name = "catppuccin",
-		config = function()
-			require("catppuccin").setup({
-				flavour = "mocha", -- latte, frappe, macchiato, mocha
-				term_colors = true,
-				transparent_background = false,
-				no_italic = false,
-				no_bold = false,
-				styles = {
-					comments = { "italic" },
-					conditionals = {},
-					loops = {},
-					functions = {},
-					keywords = {},
-					strings = {},
-					variables = {},
-					numbers = {},
-					booleans = {},
-					properties = {},
-					types = {},
-				},
-				color_overrides = {
-					mocha = {
-						base = "#000000",
-						mantle = "#000000",
-						crust = "#000000",
-					},
-				},
-				highlight_overrides = {
-					mocha = function(C)
-						return {
-							TabLineSel = { bg = C.pink },
-							CmpBorder = { fg = C.surface2 },
-							Pmenu = { bg = C.none },
-							TelescopeBorder = { link = "FloatBorder" },
-						}
-					end,
-				},
-				integrations = {
-					cmp = true,
-					gitsigns = true,
-					telescope = true,
-					notify = false,
-					mini = false,
-					-- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
-				},
-			})
-		end,
-	},
-	{ "morhetz/gruvbox" },
+	-- {
+	-- 	"catppuccin/nvim",
+	-- 	name = "catppuccin",
+	-- 	config = function()
+	-- 		require("catppuccin").setup({
+	-- 			flavour = "mocha", -- latte, frappe, macchiato, mocha
+	-- 			term_colors = true,
+	-- 			transparent_background = false,
+	-- 			no_italic = false,
+	-- 			no_bold = false,
+	-- 			styles = {
+	-- 				comments = { "italic" },
+	-- 				conditionals = {},
+	-- 				loops = {},
+	-- 				functions = {},
+	-- 				keywords = {},
+	-- 				strings = {},
+	-- 				variables = {},
+	-- 				numbers = {},
+	-- 				booleans = {},
+	-- 				properties = {},
+	-- 				types = {},
+	-- 			},
+	-- 			color_overrides = {
+	-- 				mocha = {
+	-- 					base = "#000000",
+	-- 					mantle = "#000000",
+	-- 					crust = "#000000",
+	-- 				},
+	-- 			},
+	-- 			highlight_overrides = {
+	-- 				mocha = function(C)
+	-- 					return {
+	-- 						TabLineSel = { bg = C.pink },
+	-- 						CmpBorder = { fg = C.surface2 },
+	-- 						Pmenu = { bg = C.none },
+	-- 						TelescopeBorder = { link = "FloatBorder" },
+	-- 					}
+	-- 				end,
+	-- 			},
+	-- 			integrations = {
+	-- 				cmp = true,
+	-- 				gitsigns = true,
+	-- 				telescope = true,
+	-- 				notify = false,
+	-- 				mini = false,
+	-- 				-- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
+	-- 			},
+	-- 		})
+	-- 	end,
+	-- },
+	-- { "morhetz/gruvbox" },
 	{ "sainnhe/gruvbox-material" },
 
 	{ "EdenEast/nightfox.nvim" },
 	{ "Mofiqul/dracula.nvim" },
-	{ "navarasu/onedark.nvim" },
+	-- { "navarasu/onedark.nvim" },
 	{ "sainnhe/everforest" },
 	{ "rebelot/kanagawa.nvim" },
-	{ "projekt0n/github-nvim-theme" },
+	-- { "projekt0n/github-nvim-theme" },
 	{
 		"ribru17/bamboo.nvim",
 		name = "bamboo",
@@ -202,7 +202,7 @@ lvim.plugins = {
 		end,
 	},
 	-- Available values: default, atlantis, andromeda, shusia, maia, espresso
-	{ "sainnhe/sonokai" },
+	-- { "sainnhe/sonokai" },
 	-- NOTE themes
 }
 
